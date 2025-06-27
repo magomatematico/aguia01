@@ -3,39 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clube Piroquinha da Sorte</title>
+    <title>Clube Piroquinha da Sorte - Jogos e Entretenimento Online</title>
+    <meta name="description" content="Clube Piroquinha da Sorte oferece acesso a plataformas de jogos online como Aguia Oficial, Banca Brasileira, Feiticeira Vip, Tigers Club e Acertos Club.">
+    <meta name="keywords" content="Clube Piroquinha da Sorte, jogos online, Aguia Oficial, Banca Brasileira, Feiticeira Vip, Tigers Club, Acertos Club">
+    <meta name="author" content="Clube Piroquinha da Sorte">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Clube Piroquinha da Sorte - Jogos e Entretenimento Online">
+    <meta property="og:description" content="Junte-se ao Clube Piroquinha da Sorte e acesse plataformas de jogos online como Aguia Oficial, Banca Brasileira, Feiticeira Vip e mais!">
+    <meta property="og:image" content="assets/vanessa.png">
+    <meta property="og:url" content="https://yourdomain.com"> <!-- Replace with your GoDaddy domain -->
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Clube Piroquinha da Sorte - Jogos e Entretenimento Online">
+    <meta name="twitter:description" content="Junte-se ao Clube Piroquinha da Sorte e acesse plataformas de jogos online como Aguia Oficial, Banca Brasileira, Feiticeira Vip e mais!">
+    <meta name="twitter:image" content="assets/vanessa.png">
+    <link rel="icon" type="image/png" href="assets/favicon.png"> <!-- Add favicon -->
     <style>
         body {
             background-color: #f4e4ff;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             min-height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
         }
-        .title-container {
-            position: relative;
+        header {
             text-align: center;
             margin-bottom: 20px;
         }
+        .title-container {
+            position: relative;
+        }
         .crown {
             position: absolute;
-            top: -50px;
+            top: -70px;
             left: 50%;
             transform: translateX(-50%);
-            width: 50px;
-            height: 50px;
+            width: 80px;
+            height: 80px;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(-10px); }
         }
         h1 {
             font-family: 'Great Vibes', cursive;
             font-size: 4rem;
             color: #ffd700;
+            -webkit-text-stroke: 1px #333333;
             text-shadow: 0 0 10px #ffd700, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
             animation: glitter 1.5s infinite;
             margin: 0;
-            padding-top: 60px;
+            padding-top: 80px;
         }
         @keyframes glitter {
             0% { text-shadow: 0 0 10px #ffd700, 0 0 20px #ff69b4, 0 0 30px #ff69b4; }
@@ -56,35 +79,79 @@
             gap: 15px;
         }
         .button {
-            background-color: #ff69b4;
             color: white;
             padding: 15px 30px;
             text-decoration: none;
             font-size: 1.2rem;
             border-radius: 5px;
-            transition: background-color 0.3s, transform 0.2s;
             text-align: center;
             width: 200px;
+            background: linear-gradient(45deg, rgba(255,255,255,0.2), rgba(255,255,255,0.5), rgba(255,255,255,0.2));
+            box-shadow: 0 0 15px rgba(255,255,255,1), inset 0 0 5px rgba(255,255,255,0.7);
+            transition: transform 0.2s, box-shadow 0.3s;
+            animation: gem-shine 2s infinite;
         }
         .button:hover {
-            background-color: #ff1493;
-            transform: scale(1.05);
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255,255,255,1.2), inset 0 0 7px rgba(255,255,255,0.9);
+        }
+        @keyframes gem-shine {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .aguia { background-color: #008000; }
+        .banca { background-color: #ffff00; color: #333; }
+        .feiticeira { background-color: #800080; }
+        .tigers { background-color: #000000; }
+        .acertos { background-color: #ffa500; }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333333;
+            color: white;
+            text-align: center;
+            width: 100%;
+        }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+                padding-top: 60px;
+            }
+            .crown {
+                top: -50px;
+                width: 60px;
+                height: 60px;
+            }
+            .button {
+                width: 80%;
+                font-size: 1rem;
+                padding: 12px 20px;
+            }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="title-container">
-        <img src="https://img.icons8.com/color/48/000000/crown.png" alt="Crown" class="crown">
-        <h1>Clube Piroquinha da Sorte</h1>
-    </div>
-    <img src="vanessa.png" alt="Vanessa" class="main-image">
-    <div class="button-container">
-        <a href="https://app.acertos.club/pr/sAoYNMDQ" class="button" target="_blank">Acessar Acertos Club 1</a>
-        <a href="https://app.bancabrasileira.com.br/pr/IRH3J975" class="button" target="_blank">Acessar Banca Brasileira</a>
-        <a href="https://app.feiticeira.vip/pr/mZpjrPSu" class="button" target="_blank">Acessar Feiticeira VIP</a>
-        <a href="https://app.tigersclub.vip/pr/YNn3A9aW" class="button" target="_blank">Acessar Tigers Club</a>
-        <a href="https://app.acertos.club/pr/sAoYNMDQ" class="button" target="_blank">Acessar Acertos Club 2</a>
-    </div>
+    <header>
+        <div class="title-container">
+            <img src="assets/crown.png" alt="Crown Icon for Clube Piroquinha da Sorte" class="crown" aria-hidden="true">
+            <h1>Clube Piroquinha da Sorte</h1>
+        </div>
+    </header>
+    <main>
+        <img src="assets/vanessa.png" alt="Vanessa Promotional Image for Clube Piroquinha da Sorte" class="main-image">
+        <div class="button-container">
+            <a href="https://app.aguiaoficial.com/pr/2FE1WPn7" class="button aguia" target="_blank" rel="noopener" aria-label="Acessar Aguia Oficial">Aguia Oficial</a>
+            <a href="https://app.bancabrasileira.com.br/pr/IRH3J975" class="button banca" target="_blank" rel="noopener" aria-label="Acessar Banca Brasileira">Banca Brasileira</a>
+            <a href="https://app.feiticeira.vip/pr/mZpjrPSu" class="button feiticeira" target="_blank" rel="noopener" aria-label="Acessar Feiticeira Vip">Feiticeira Vip</a>
+            <a href="https://app.tigersclub.vip/pr/YNn3A9aW" class="button tigers" target="_blank" rel="noopener" aria-label="Acessar Tigers Club">Tigers Club</a>
+            <a href="https://app.acertos.club/pr/sAoYNMDQ" class="button acertos" target="_blank" rel="noopener" aria-label="Acessar Acertos Club">Acertos Club</a>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 Clube Piroquinha da Sorte. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
